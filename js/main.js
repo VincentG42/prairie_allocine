@@ -14,12 +14,15 @@ async function afficherFilms() {
                     <p class="realisateur"> <span>Un film de</span> ${film.Director}, <span>Ecrit par</span> ${film.Writer}</p>
                     <p class="synopsys"> ${film.Plot}</p>
                     <div class="basdecarte">
-                        <p class="notes"> <span>imdbRating:</span> ${film.imdbRating}</p> <p class="notes"><span> Metascore:</span> ${film.Metascore} </p>
-                        
+                        <div class="scores">
+                            <p> <span>imdbRating:</span> ${film.imdbRating}</p> 
+                            <p><span> Metascore:</span> ${film.Metascore} </p>
+                        </div>
+                        <div class="blocimagefilm">
                             <img  class="imagesfilm" src="${film.Images[0]}">
                             <img  class="imagesfilm" src="${film.Images[1]}">
                             <img  class="imagesfilm" src="${film.Images[2]}">       
-                        
+                        </div>
                     </div>    
                 </div>
             </div>
